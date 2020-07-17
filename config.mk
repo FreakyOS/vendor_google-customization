@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_INCLUDE_WIFI_EXT),true)
-$(call inherit-product, vendor/google-customization/interfaces/wifi_ext/wifi-ext.mk)
-endif
-
 ifeq ($(TARGET_FLATTEN_APEX),false)
 # Apex Namespace
 PRODUCT_SOONG_NAMESPACES += vendor/google-customization/apex/apex_images
